@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<PageTitle>Blackjack</PageTitle>
+
+<h1>Blackjack</h1>
+@for (int i = 0; i < deck.GetDeckLength(); i++)    
+{
+    <div>@deck.GetCard(i).ToString() </div>
+}
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    Deck deck = new Deck();
+    
+
+
+}
